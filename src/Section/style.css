@@ -1,0 +1,41 @@
+.taskList__section {
+    border-bottom: 1px solid rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 767px) {
+    .taskList__section {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.taskList__header {
+    font-size: 25px;
+    font-weight: 700;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    .taskList__header {
+        margin: 0;
+    }
+}
+
+.taskList__buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .taskList__buttons {
+        flex-basis: auto;
+        margin: 10px;
+        justify-content: center;
+    }
+}
