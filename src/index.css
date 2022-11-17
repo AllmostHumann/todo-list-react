@@ -6,3 +6,10 @@ html {
 *, ::after, ::before {
   box-sizing: inherit;
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  word-break: break-word;
+  background-color: #dadada;
+  justify-content: center;
+}
