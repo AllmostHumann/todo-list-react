@@ -1,7 +1,6 @@
 import "./style.css"
 
 const Section = ({ title, body, extraHeaderContent }) => (
-
     <section>
         <div className="taskList__section">
             <h2 className="taskList__header">
@@ -13,6 +12,6 @@ const Section = ({ title, body, extraHeaderContent }) => (
         </div>
         {body}
     </section>
-)
+);
 
 export default Section;
