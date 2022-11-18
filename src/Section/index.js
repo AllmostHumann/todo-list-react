@@ -12,6 +12,6 @@ const Section = ({ title, body, extraHeaderContent }) => (
     </div>
     {body}
   </section>
-)
+);
 
 export default Section;
