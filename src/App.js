@@ -15,7 +15,7 @@ const tasks = [
   { id: 2, content: "zjeść obiad", done: true },
 ];
 
-const toggleHideDoneTasks = false;
+const hideDone = false;
 
 
 function App() {
@@ -30,10 +30,10 @@ function App() {
       <Section
         title="Lista zadań"
         body={
-          <Tasks tasks={tasks} toggleHideDoneTasks={toggleHideDoneTasks} />
+          <Tasks tasks={tasks} hideDone={hideDone} />
         }
         extraHeaderContent={
-          <Buttons tasks={tasks} toggleHideDoneTasks={toggleHideDoneTasks} />
+          <Buttons tasks={tasks} hideDone={hideDone} />
         }
       />
     </Container>

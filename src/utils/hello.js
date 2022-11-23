@@ -1,7 +1,7 @@
 const hello = () => {
-    console.log("Cześć");
+    console.log("Hello");
 }
 
-const name = "Kuba";
+const name = "Neo...";
 
 export { hello, name, };
