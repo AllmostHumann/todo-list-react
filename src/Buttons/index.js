@@ -1,12 +1,15 @@
 import React from "react";
 import "./style.css"
 
-const Buttons = ({ tasks, hideDoneTasks }) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone }) => (
   <div className="taskList__buttons">
     {tasks.length > 0 && (
       <React.Fragment>
-        <button className="taskList__button">
-          {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+        <button
+          onClick={toggleHideDone}
+          className="taskList__button"
+        >
+          {hideDone ? "Pokaż" : "Ukryj"} ukończone
         </button>
         <button
           className="taskList__button"

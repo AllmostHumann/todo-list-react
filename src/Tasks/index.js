@@ -1,10 +1,10 @@
 import "./style.css";
 
-const Tasks = ({ tasks, hideDoneTasks }) => (
+const Tasks = ({ tasks, hideDone }) => (
   <ul className="taskList">
     {tasks.map(tasks => (
       <li key={tasks.id}
-        className={`taskList__item${tasks.done && hideDoneTasks
+        className={`taskList__item ${tasks.done && hideDone
           ? "taskList__item--hidden"
           : ""}`
         }
