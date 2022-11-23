@@ -27,15 +27,3 @@
     }
 }
 
-.taskList__buttons {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 767px) {
-    .taskList__buttons {
-        flex-basis: auto;
-        margin: 10px;
-        justify-content: center;
-    }
-}
