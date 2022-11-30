@@ -1,4 +1,4 @@
-.taskList__button {
+.buttons__button {
     border: none;
     background-color: rgb(255, 255, 255);
     color: teal;
@@ -7,26 +7,26 @@
 }
 
 @media (max-width: 767px) {
-    .taskList__button {
+    .button {
         margin: 5px 20px 0 0;
     }
 }
 
-.taskList__button:hover {
+.buttons__button:hover {
     color: rgba(0, 128, 128, 0.822);
 }
 
-.taskList__button:disabled {
+.buttons__button:disabled {
     color: rgb(204, 204, 204);
 }
 
-.taskList__buttons {
+.buttons {
     display: flex;
     flex-wrap: wrap;
 }
 
 @media (max-width: 767px) {
-    .taskList__buttons {
+    .buttons {
         flex-basis: auto;
         margin: 10px;
         justify-content: center;
