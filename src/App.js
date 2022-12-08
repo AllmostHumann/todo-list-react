@@ -14,10 +14,12 @@ console.log(hello.name);
 
 function App() {
   const [hideDone, setHideDone] = useState(
-    JSON.parse(localStorage.getItem("hideDone") || false));
+    JSON.parse(localStorage.getItem("hideDone")) || false
+    );
 
   const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem("tasks") || []));
+    JSON.parse(localStorage.getItem("tasks")) || []
+    );
 
 
   const toggleHideDone = () => {
@@ -57,12 +59,12 @@ function App() {
   };
 
   useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
-
-  useEffect(() => {
     localStorage.setItem("hideDone", JSON.stringify(hideDone));
   }, [hideDone]);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   return (
 
