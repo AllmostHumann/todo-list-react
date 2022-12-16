@@ -7,10 +7,6 @@ import Header from "./Header";
 import Section from "./Section";
 import Body from "./Body";
 import Container from "./Container";
-import * as hello from "./utils/hello";
-
-hello.hello();
-console.log(hello.name);
 
 function App() {
   const [hideDone, setHideDone] = useState(
