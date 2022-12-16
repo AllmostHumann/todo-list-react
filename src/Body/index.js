@@ -1,12 +1,12 @@
 import "./style.css"
 
-const Main = ({ title, body }) => (
+const Body = ({ title, body }) => (
     <section>
-        <h2 className="main__header">
+        <h2 className="body__header">
             {title}
         </h2>
         {body}
     </section>
 );
 
-export default Main;
+export default Body;

@@ -5,7 +5,7 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Header from "./Header";
 import Section from "./Section";
-import Main from "./Main";
+import Body from "./Body";
 import Container from "./Container";
 import * as hello from "./utils/hello";
 
@@ -70,7 +70,7 @@ function App() {
 
     <Container>
       <Header />
-      <Main
+      <Body
         title="Dodaj nowe zadanie"
         body={<Form
           tasks={tasks}
