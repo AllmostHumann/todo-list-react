@@ -1,9 +1,9 @@
-import "./style.css"
+import { MainHeader } from "./styled";
 
 const Header = (props) => (
-    <header className="header">
+    <MainHeader>
         Lista zadań
-    </header>
+    </MainHeader>
 );
 
 export default Header;
