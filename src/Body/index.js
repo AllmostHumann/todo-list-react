@@ -1,10 +1,10 @@
-import "./style.css"
+import { BodyHeader } from "./styled";
 
 const Body = ({ title, body }) => (
     <section>
-        <h2 className="body__header">
+        <BodyHeader>
             {title}
-        </h2>
+        </BodyHeader>
         {body}
     </section>
 );
