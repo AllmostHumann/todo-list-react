@@ -26,7 +26,7 @@ Simple to do list in React.js, with mobile devices responsiveness.
 - Grid
 - Flex
 - React.js
-- CSS
+- Styled-components
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
