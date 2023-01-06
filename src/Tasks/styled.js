@@ -1,53 +1,52 @@
-.taskList {
+import styled, { css } from "styled-components";
+
+export const List = styled.ul`
     padding: 20px;
     margin: auto;
     background-color: rgb(255, 255, 255);
-}
+`;
 
-.taskList__item {
+export const Item = styled.li`
     border-bottom: 2px solid rgb(221, 221, 221);
     padding: 5px;
     display: grid;
     grid-template-columns: 25px 1fr 25px;
     align-items: center;
     grid-gap: 10px;
-}
 
-.taskList__item--hidden {
+    ${({ hidden }) => hidden && css`
     display: none;
-}
+    `}
+`;
 
-.taskList__item--done {
+export const Content = styled.span`
+    ${({ done }) => done && css`
     text-decoration: line-through;
-}
+`}
+`;
 
+export const Button = styled.button`
+    color: rgb(255, 255, 255);
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: 1s;
 
-.taskList__button__done {
+    ${({ done }) => done && css`
     background-color: rgb(0, 128, 0);
-    color: rgb(255, 255, 255);
-    width: 25px;
-    height: 25px;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    transition: 1s;
-}
 
-.taskList__button__done:hover {
+      &:hover {
     background-color: hsl(101, 99%, 36%);
-}
+      }
+    `}
 
-.taskList__button__remove {
+    ${({ remove }) => remove && css`
     background-color: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
-    width: 25px;
-    height: 25px;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    transition: 1s;
-}
 
-.taskList__button__remove:hover {
+    &:hover {
     background-color: rgb(255, 70, 70);
-}
+    }
+    `}  
+`;
