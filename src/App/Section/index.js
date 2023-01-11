@@ -1,4 +1,4 @@
-import { Body, Container, Header } from "./styled";
+import { Body, Container, List } from "./styled";
 
 const Section = ({ listTitle, listContent, bodyTitle, bodyContent, buttons }) => (
   <section>
@@ -7,9 +7,9 @@ const Section = ({ listTitle, listContent, bodyTitle, bodyContent, buttons }) =>
     </Body>
     {bodyContent}
     <Container>
-      <Header>
+      <List>
         {listTitle}
-      </Header>
+      </List>
       {buttons}
     </Container>
     {listContent}

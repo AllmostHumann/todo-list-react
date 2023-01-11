@@ -14,7 +14,7 @@ export const Container = styled.div`
     }
 `;
 
-export const Header = styled.h2`
+export const List = styled.h2`
     font-size: 25px;
     font-weight: 700;
     margin: auto;
