@@ -1,6 +1,6 @@
 import { MainHeader } from "./styled";
 
-const Header = (props) => (
+const Header = () => (
     <MainHeader>
         Lista zadań
     </MainHeader>

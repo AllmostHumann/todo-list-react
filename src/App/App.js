@@ -4,7 +4,6 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Header from "./Header";
 import Section from "./Section";
-import Body from "./Body";
 import Container from "./Container";
 import GlobalStyle from "../globalStyle";
 
@@ -24,18 +23,17 @@ function App() {
       <GlobalStyle />
       <Container>
         <Header />
-        <Body
-          title="Dodaj nowe zadanie"
-          body={
+        <Section
+          bodyTitle="Dodaj nowe zadanie"
+          bodyContent={
             <Form
               tasks={tasks}
               hideDone={hideDone}
               addNewTask={addNewTask}
-            />}
-        />
-        <Section
-          title="Lista zadań"
-          body={
+            />
+          }
+          listTitle="Lista zadań"
+          listBody={
             <Tasks
               tasks={tasks}
               hideDone={hideDone}

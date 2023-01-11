@@ -1,16 +1,18 @@
-import { Container, Header } from "./styled";
+import { Body, Container, Header } from "./styled";
 
-const Section = ({ title, body, extraHeaderContent }) => (
+const Section = ({ listTitle, listBody, extraHeaderContent, bodyTitle, bodyContent }) => (
   <section>
+    <Body>
+      {bodyTitle}
+    </Body>
+    {bodyContent}
     <Container>
       <Header>
-        {title}
+        {listTitle}
       </Header>
-      <div>
-        {extraHeaderContent}
-      </div>
+      {extraHeaderContent}
     </Container>
-    {body}
+    {listBody}
   </section>
 );
 
