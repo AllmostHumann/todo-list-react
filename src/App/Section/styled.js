@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Div = styled.div`
+export const Container = styled.div`
     border-bottom: 1px solid rgb(221, 221, 221);
     background-color: rgb(255, 255, 255);
     display: grid;
