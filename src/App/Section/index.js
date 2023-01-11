@@ -1,6 +1,6 @@
 import { Body, Container, Header } from "./styled";
 
-const Section = ({ listTitle, listBody, extraHeaderContent, bodyTitle, bodyContent }) => (
+const Section = ({ listTitle, listContent, bodyTitle, bodyContent, buttons }) => (
   <section>
     <Body>
       {bodyTitle}
@@ -10,9 +10,9 @@ const Section = ({ listTitle, listBody, extraHeaderContent, bodyTitle, bodyConte
       <Header>
         {listTitle}
       </Header>
-      {extraHeaderContent}
+      {buttons}
     </Container>
-    {listBody}
+    {listContent}
   </section>
 );
 

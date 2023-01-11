@@ -33,20 +33,20 @@ function App() {
             />
           }
           listTitle="Lista zadań"
-          listBody={
-            <Tasks
-              tasks={tasks}
-              hideDone={hideDone}
-              removeTask={removeTask}
-              toggleTaskDone={toggleTaskDone}
-            />
-          }
-          extraHeaderContent={
+          buttons={
             <Buttons
               tasks={tasks}
               hideDone={hideDone}
               toggleHideDone={toggleHideDone}
               setAllDone={setAllDone}
+            />
+          }
+          listContent={
+            <Tasks
+              tasks={tasks}
+              hideDone={hideDone}
+              removeTask={removeTask}
+              toggleTaskDone={toggleTaskDone}
             />
           }
         />

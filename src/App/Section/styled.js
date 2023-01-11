@@ -9,8 +9,7 @@ export const Container = styled.div`
     align-items: center;
     gap: 10px;
     padding: 10px;
-
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
         grid-template-columns: 1fr;
     }
 `;
@@ -19,8 +18,7 @@ export const Header = styled.h2`
     font-size: 25px;
     font-weight: 700;
     margin: auto;
-
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
         margin: 0;
         background-color: rgb(255, 255, 255);
         font-weight: 700;
