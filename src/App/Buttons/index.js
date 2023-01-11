@@ -1,10 +1,9 @@
-import React from "react";
-import { ButtonsDiv, Button } from "./styled";
+import { Wrapper, Button } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
-  <ButtonsDiv>
+  <Wrapper>
     {tasks.length > 0 && (
-      <React.Fragment>
+      <>
         <Button
           onClick={toggleHideDone}
         >
@@ -16,9 +15,9 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
         >
           Ukończ wszystkie
         </Button>
-      </React.Fragment>
+      </>
     )}
-  </ButtonsDiv>
+  </Wrapper>
 );
 
 export default Buttons;

@@ -13,7 +13,7 @@ export const Item = styled.li`
     grid-template-columns: 25px 1fr 25px;
     align-items: center;
     grid-gap: 10px;
-
+    
     ${({ hidden }) => hidden && css`
     display: none;
     `}
@@ -37,7 +37,7 @@ export const Button = styled.button`
     ${({ done }) => done && css`
     background-color: rgb(0, 128, 0);
 
-      &:hover {
+    &:hover {
     background-color: hsl(101, 99%, 36%);
       }
     `}

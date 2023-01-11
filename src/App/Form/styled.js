@@ -7,7 +7,6 @@ export const FormElement = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
-
     @media (max-width: 767px) {
         display: flex;
         flex-wrap: wrap;
@@ -17,7 +16,6 @@ export const FormElement = styled.form`
 export const FormInput = styled.input`
     border: 1px solid rgb(177, 176, 176);
     padding: 5px;
-
     @media (max-width: 767px) {
         width: 100%;
 }
@@ -30,17 +28,13 @@ export const FormButton = styled.button`
     cursor: pointer;
     padding: 10px;
     transition: 1s;
-
 @media (max-width: 767px) {
         width: 100%;
 }    
-
     &:hover {
     transform: scale(1.15);
-
     @media (max-width: 767px) {
     transform: scale(1.03);    
     }
 };
-
 `;

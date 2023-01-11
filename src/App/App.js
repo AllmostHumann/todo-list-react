@@ -26,11 +26,12 @@ function App() {
         <Header />
         <Body
           title="Dodaj nowe zadanie"
-          body={<Form
-            tasks={tasks}
-            hideDone={hideDone}
-            addNewTask={addNewTask}
-          />}
+          body={
+            <Form
+              tasks={tasks}
+              hideDone={hideDone}
+              addNewTask={addNewTask}
+            />}
         />
         <Section
           title="Lista zadań"
