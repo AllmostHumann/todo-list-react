@@ -6,6 +6,7 @@ import Header from "./Header";
 import Section from "./Section";
 import Body from "./Body";
 import Container from "./Container";
+import GlobalStyle from "../globalStyle";
 
 function App() {
   const {
@@ -19,37 +20,39 @@ function App() {
   } = useTasks();
 
   return (
-
-    <Container>
-      <Header />
-      <Body
-        title="Dodaj nowe zadanie"
-        body={<Form
-          tasks={tasks}
-          hideDone={hideDone}
-          addNewTask={addNewTask}
-        />}
-      />
-      <Section
-        title="Lista zadań"
-        body={
-          <Tasks
+    <>
+      <GlobalStyle />
+      <Container>
+        <Header />
+        <Body
+          title="Dodaj nowe zadanie"
+          body={<Form
             tasks={tasks}
             hideDone={hideDone}
-            removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
-          />
-        }
-        extraHeaderContent={
-          <Buttons
-            tasks={tasks}
-            hideDone={hideDone}
-            toggleHideDone={toggleHideDone}
-            setAllDone={setAllDone}
-          />
-        }
-      />
-    </Container>
+            addNewTask={addNewTask}
+          />}
+        />
+        <Section
+          title="Lista zadań"
+          body={
+            <Tasks
+              tasks={tasks}
+              hideDone={hideDone}
+              removeTask={removeTask}
+              toggleTaskDone={toggleTaskDone}
+            />
+          }
+          extraHeaderContent={
+            <Buttons
+              tasks={tasks}
+              hideDone={hideDone}
+              toggleHideDone={toggleHideDone}
+              setAllDone={setAllDone}
+            />
+          }
+        />
+      </Container>
+    </>
   );
 }
 
