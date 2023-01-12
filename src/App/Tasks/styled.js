@@ -20,7 +20,7 @@ export const Item = styled.li`
 `;
 
 export const Content = styled.span`
-    ${({ done }) => done && css`
+    ${({ type }) => type === "done" && css`
     text-decoration: line-through;
 `}
 `;
@@ -34,7 +34,7 @@ export const Button = styled.button`
     padding: 0;
     transition: 1s;
 
-    ${({ done }) => done && css`
+    ${({ type }) => type === "done" && css`
     background-color: rgb(0, 128, 0);
 
     &:hover {
@@ -42,7 +42,7 @@ export const Button = styled.button`
       }
     `}
 
-    ${({ remove }) => remove && css`
+    ${({ type }) => type === "remove" && css`
     background-color: rgb(255, 0, 0);
 
     &:hover {
