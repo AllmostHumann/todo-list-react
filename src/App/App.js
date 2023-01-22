@@ -1,6 +1,6 @@
 import { useTasks } from "./useTasks";
 import Form from "../features/tasks/Form";
-import Tasks from "./Tasks";
+import Tasks from "../features/tasks/Tasks";
 import Buttons from "../features/tasks/Buttons";
 import Header from "../common/Header";
 import Section from "../common/Section";
