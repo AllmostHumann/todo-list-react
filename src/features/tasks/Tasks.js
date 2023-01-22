@@ -14,12 +14,12 @@ function Tasks() {
 
   const {
     // tasks,
-    hideDone,
+    // hideDone,
     removeTask,
     // toggleTaskDone,
     setAllDone,
     addNewTask,
-    toggleHideDone,
+    // toggleHideDone,
   } = useTasks();
 
   return (
