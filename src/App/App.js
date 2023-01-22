@@ -1,7 +1,7 @@
 import { useTasks } from "./useTasks";
 import Form from "./Form";
 import Tasks from "./Tasks";
-import Buttons from "./Buttons";
+import Buttons from "../features/tasks/Buttons";
 import Header from "../common/Header";
 import Section from "../common/Section";
 import Container from "../common/Container";
