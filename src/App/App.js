@@ -5,7 +5,6 @@ import Buttons from "../features/tasks/Buttons";
 import Header from "../common/Header";
 import Section from "../common/Section";
 import Container from "../common/Container";
-import GlobalStyle from "../globalStyle";
 
 function App() {
   const {
@@ -20,7 +19,6 @@ function App() {
 
   return (
     <>
-      <GlobalStyle />
       <Container>
         <Header />
         <Section
