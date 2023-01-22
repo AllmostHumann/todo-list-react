@@ -9,14 +9,14 @@ import Container from "../../common/Container";
 import { selectTasks } from "./tasksSlice";
 
 function Tasks() {
-  
+
   const { tasks } = useSelector(selectTasks);
 
   const {
     // tasks,
     hideDone,
     removeTask,
-    toggleTaskDone,
+    // toggleTaskDone,
     setAllDone,
     addNewTask,
     toggleHideDone,
@@ -31,25 +31,18 @@ function Tasks() {
           bodyContent={
             <Form
               tasks={tasks}
-              hideDone={hideDone}
               addNewTask={addNewTask}
             />
           }
           listTitle="Lista zadań"
           buttons={
             <Buttons
-              tasks={tasks}
-              hideDone={hideDone}
-              toggleHideDone={toggleHideDone}
               setAllDone={setAllDone}
             />
           }
           listContent={
             <TasksList
-              tasks={tasks}
-              hideDone={hideDone}
               removeTask={removeTask}
-              toggleTaskDone={toggleTaskDone}
             />
           }
         />
