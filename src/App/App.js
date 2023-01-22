@@ -4,7 +4,7 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Header from "./Header";
 import Section from "./Section";
-import Container from "./Container";
+import Container from "../common/Container";
 import GlobalStyle from "../globalStyle";
 
 function App() {
