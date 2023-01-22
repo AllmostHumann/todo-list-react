@@ -1,6 +1,6 @@
 import { useTasks } from "./useTasks";
 import Form from "../features/tasks/Form";
-import Tasks from "../features/tasks/Tasks";
+import TasksList from "../features/tasks/TasksList";
 import Buttons from "../features/tasks/Buttons";
 import Header from "../common/Header";
 import Section from "../common/Section";
@@ -40,7 +40,7 @@ function App() {
             />
           }
           listContent={
-            <Tasks
+            <TasksList
               tasks={tasks}
               hideDone={hideDone}
               removeTask={removeTask}
