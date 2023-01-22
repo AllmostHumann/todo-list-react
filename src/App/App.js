@@ -3,7 +3,7 @@ import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Header from "../common/Header";
-import Section from "./Section";
+import Section from "../common/Section";
 import Container from "../common/Container";
 import GlobalStyle from "../globalStyle";
 
