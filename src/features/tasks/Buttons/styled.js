@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 
 export const Button = styled.button`
     border: none;
-    background-color: rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 100%);
     color: teal;
     margin: 0 10px 0 10px;
     transition: color 0.5s;
@@ -21,9 +21,9 @@ export const Button = styled.button`
 };
 
 &:hover {
-    color: rgba(0, 128, 128, 0.822);
+    color: hsla(180, 100%, 25%, 0.822);
 }
 &:disabled {
-    color: rgb(204, 204, 204);
+    color: hsl(0, 0%, 80%);
 }
 `;
