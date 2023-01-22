@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Tasks from './features/tasks/Tasks.js';
+import { App } from "./App";
 import reportWebVitals from './reportWebVitals';
 import GlobalStyle from './globalStyle';
 
@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <Tasks />
+    <App />
   </React.StrictMode>
 );
 
