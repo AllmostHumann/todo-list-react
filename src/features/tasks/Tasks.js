@@ -1,10 +1,10 @@
 import { useTasks } from "./useTasks";
-import Form from "../features/tasks/Form";
-import TasksList from "../features/tasks/TasksList";
-import Buttons from "../features/tasks/Buttons";
-import Header from "../common/Header";
-import Section from "../common/Section";
-import Container from "../common/Container";
+import Form from "./Form";
+import TasksList from "./TasksList";
+import Buttons from "./Buttons";
+import Header from "../../common/Header";
+import Section from "../../common/Section";
+import Container from "../../common/Container";
 
 function Tasks() {
   const {

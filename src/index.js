@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Tasks from './App/Tasks';
+import Tasks from './features/tasks/Tasks.js';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyle from './globalStyle';
 
