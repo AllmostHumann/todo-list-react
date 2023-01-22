@@ -6,7 +6,7 @@ import Header from "../common/Header";
 import Section from "../common/Section";
 import Container from "../common/Container";
 
-function App() {
+function Tasks() {
   const {
     tasks,
     hideDone,
@@ -53,4 +53,4 @@ function App() {
   );
 }
 
-export default App;
+export default Tasks;
