@@ -7,7 +7,9 @@ import { FormElement, FormInput, FormButton } from "./styled";
 const Form = () => {
     const [newTaskContent, setNewTaskContent] = useState("");
     const inputRef = useRef(null);
+
     const dispatch = useDispatch();
+    
     const focusInput = () => {
         inputRef.current.focus();
     };
