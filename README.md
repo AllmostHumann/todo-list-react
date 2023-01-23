@@ -9,7 +9,6 @@
 
 This is my fourth project made with <b>#YouCode course.</b> This time the third project "To do list" is transferred in to React.js. 
 
-
 Please follow me and see how I become Frontend dev! 
 
 Ps: I'm strongly open for comments and suggestion!
@@ -27,6 +26,7 @@ Simple to do list in React.js, with mobile devices responsiveness.
 - Flex
 - React.js
 - Styled-components
+- Redux
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
