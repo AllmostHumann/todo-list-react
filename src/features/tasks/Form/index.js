@@ -7,16 +7,13 @@ import { FormElement, FormInput, FormButton } from "./styled";
 const Form = () => {
     const [newTaskContent, setNewTaskContent] = useState("");
     const inputRef = useRef(null);
-
     const dispatch = useDispatch();
-
     const focusInput = () => {
         inputRef.current.focus();
     };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-
         const trimmedNewTaskContent = newTaskContent.trim();
 
         if (!trimmedNewTaskContent) {
