@@ -1,4 +1,3 @@
-import { useTasks } from "./useTasks";
 import Form from "./Form";
 import TasksList from "./TasksList";
 import Buttons from "./Buttons";
@@ -7,16 +6,6 @@ import Section from "../../common/Section";
 import Container from "../../common/Container";
 
 function Tasks() {
-
-  const {
-    // tasks,
-    // hideDone,
-    // removeTask,
-    // toggleTaskDone,
-    setAllDone,
-    // addNewTask,
-    // toggleHideDone,
-  } = useTasks();
 
   return (
     <>
@@ -29,9 +18,7 @@ function Tasks() {
           }
           listTitle="Lista zadań"
           buttons={
-            <Buttons
-              setAllDone={setAllDone}
-            />
+            <Buttons />
           }
           listContent={
             <TasksList />
