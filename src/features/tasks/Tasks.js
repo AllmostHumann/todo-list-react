@@ -11,7 +11,7 @@ function Tasks() {
   const {
     // tasks,
     // hideDone,
-    removeTask,
+    // removeTask,
     // toggleTaskDone,
     setAllDone,
     // addNewTask,
@@ -34,9 +34,7 @@ function Tasks() {
             />
           }
           listContent={
-            <TasksList
-              removeTask={removeTask}
-            />
+            <TasksList />
           }
         />
       </Container>
