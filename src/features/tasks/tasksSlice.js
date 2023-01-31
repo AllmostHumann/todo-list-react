@@ -40,6 +40,7 @@ const tasksSlice = createSlice({
             state.tasks = tasks;
             state.loading = false;
         },
+        
     },
 });
 
