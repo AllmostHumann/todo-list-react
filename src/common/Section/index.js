@@ -1,11 +1,8 @@
 import { Body, Container, List, TopSection } from "./styled";
-import { ExampleButton } from "./styled";
-import { useDispatch, useSelector } from "react-redux";
-import { exampleTasks, selectLoading } from "../../features/tasks/tasksSlice";
+import Button from "../../features/tasks/ExampleTasksButton";
+
 
 const Section = ({ listTitle, listContent, bodyTitle, bodyContent, buttons }) => {
-  const dispatch = useDispatch();
-  const loading = useSelector(selectLoading);
 
   return (
     <section>
@@ -13,11 +10,7 @@ const Section = ({ listTitle, listContent, bodyTitle, bodyContent, buttons }) =>
         <Body>
           {bodyTitle}
         </Body>
-        <ExampleButton 
-        onClick={() => dispatch(exampleTasks())}
-        disabled={loading}>
-        {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
-        </ExampleButton>
+        <Button />
       </TopSection>
       {bodyContent}
       <Container>
