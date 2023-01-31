@@ -1,7 +1,6 @@
 import { Body, Container, List, TopSection } from "./styled";
 import Button from "../../features/tasks/ExampleTasksButton";
 
-
 const Section = ({ listTitle, listContent, bodyTitle, bodyContent, buttons }) => {
 
   return (
