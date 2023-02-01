@@ -4,8 +4,7 @@ import Header from "../../common/Header";
 import Section from "../../common/Section";
 import Container from "../../common/Container";
 
-function Tasks() {
-
+function TasksPage() {
   return (
     <>
       <Container>
@@ -23,4 +22,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;
