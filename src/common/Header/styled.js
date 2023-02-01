@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
-export const MainHeader = styled.header`
-    font-weight: 700;
-    font-size: 45px;
-    display: block;
-    margin: auto;
+export const Wrapper = styled.header`
+    margin: 0;
+`;
 
-    @media (max-width: 767px) {
-        font-weight: 700;
-        font-size: 25px;
-        display: block;
-        margin: auto;
-}
+export const Title = styled.h1`
+    margin: 0;
+    display: grid;
+    padding: 10px;
 `;

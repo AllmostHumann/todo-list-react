@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FormElement = styled.form`
-    margin: -3px auto 10px auto;
+    margin-bottom: 10px;
     background-color: hsl(0, 0%, 100%);
     padding: 20px;
     display: grid;

@@ -1,20 +1,20 @@
-import { ExampleButton } from "./style";
+import { Button } from "../Buttons/styled";
 import { useDispatch, useSelector } from "react-redux";
 import { exampleTasks, selectLoading } from "../../tasksSlice";
 
-const Button = () => {
+const ExampleTasksButton = () => {
     const dispatch = useDispatch();
     const loading = useSelector(selectLoading);
 
     return (
-        <ExampleButton
+        <Button
             onClick={() => dispatch(exampleTasks())}
             disabled={loading}
         >
             {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
-        </ExampleButton>
+        </Button>
     );
 };
 
 
-export default Button;
+export default ExampleTasksButton;

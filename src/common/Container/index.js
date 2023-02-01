@@ -1,12 +1,9 @@
-import styled from "styled-components";
+import { Wrapper } from "./styled";
 
-const Container = styled.main`
-    margin: 0 auto;
-    text-align: left;
-    max-width: 1000px;
-    padding: 20px;
-    line-height: 1.5;
-    background-color: hsl(0, 0%, 85%);
-`;
+const Container = ({ children }) => (
+    <Wrapper className="container">
+        {children}
+    </Wrapper>
+);
 
 export default Container;

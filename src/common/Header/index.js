@@ -1,9 +1,9 @@
-import { MainHeader } from "./styled";
+import { Title, Wrapper } from "./styled";
 
 const Header = ({ title }) => (
-    <MainHeader>
-        {title}
-    </MainHeader>
+    <Wrapper>
+        <Title>{title}</Title>
+    </Wrapper>
 );
 
 export default Header;
