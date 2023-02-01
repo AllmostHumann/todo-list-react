@@ -7,7 +7,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-    border-bottom: 2px solid hsl(0, 0%, 87%);
+    border-bottom: 1px solid hsl(0, 0%, 85%);
     padding: 5px;
     display: grid;
     grid-template-columns: 25px 1fr 25px;
