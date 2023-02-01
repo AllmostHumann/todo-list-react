@@ -1,8 +1,8 @@
 import { MainHeader } from "./styled";
 
-const Header = () => (
+const Header = ({ title }) => (
     <MainHeader>
-        Lista zadań
+        {title}
     </MainHeader>
 );
 

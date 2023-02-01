@@ -1,4 +1,3 @@
-import Form from "./Form";
 import TasksList from "./TasksList";
 import Buttons from "./Buttons";
 import Header from "../../common/Header";
@@ -10,19 +9,14 @@ function Tasks() {
   return (
     <>
       <Container>
-        <Header />
+        <Header
+          title="Lista zadań"
+        />
         <Section
-          bodyTitle="Dodaj nowe zadanie"
-          bodyContent={
-            <Form />
-          }
+          title="Dodaj nowe zadanie"
           listTitle="Lista zadań"
-          buttons={
-            <Buttons />
-          }
-          listContent={
-            <TasksList />
-          }
+          buttons={<Buttons />}
+          listContent={<TasksList />}
         />
       </Container>
     </>

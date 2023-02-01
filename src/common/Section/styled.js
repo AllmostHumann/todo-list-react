@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TopSection = styled.div`
+export const Wrapper = styled.div`
     border-bottom: 5px solid hsl(0, 0%, 87%);
     background-color: hsl(0, 0%, 100%);
     display: grid;
@@ -40,7 +40,7 @@ export const List = styled.h2`
 }
 `;
 
-export const Body = styled.h2`
+export const Title = styled.h2`
     padding: 10px;
     margin: auto;
     background-color: hsl(0, 0%, 100%);

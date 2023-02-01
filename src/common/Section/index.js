@@ -1,17 +1,18 @@
-import { Body, Container, List, TopSection } from "./styled";
+import { Title, Container, List, Wrapper } from "./styled";
 import Button from "../../features/tasks/ExampleTasksButton";
+import Form from "../../features/tasks/Form";
 
-const Section = ({ listTitle, listContent, bodyTitle, bodyContent, buttons }) => {
+const Section = ({ listTitle, listContent, title, bodyContent, buttons }) => {
 
   return (
-    <section>
-      <TopSection>
-        <Body>
-          {bodyTitle}
-        </Body>
+    <>
+      <Wrapper>
+        <Title>
+          {title}
+        </Title>
         <Button />
-      </TopSection>
-      {bodyContent}
+      </Wrapper>
+      <Form />
       <Container>
         <List>
           {listTitle}
@@ -19,7 +20,7 @@ const Section = ({ listTitle, listContent, bodyTitle, bodyContent, buttons }) =>
         {buttons}
       </Container>
       {listContent}
-    </section>
+    </>
   )
 };
 
