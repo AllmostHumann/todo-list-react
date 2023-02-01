@@ -1,8 +1,8 @@
-import TasksList from "./TasksList";
-import Buttons from "./Buttons";
-import Header from "../../common/Header";
-import Section from "../../common/Section";
-import Container from "../../common/Container";
+import TasksList from "../TasksList";
+import Buttons from "../Buttons";
+import Header from "../../../common/Header";
+import Section from "../../../common/Section";
+import Container from "../../../common/Container";
 
 function TasksPage() {
   return (
