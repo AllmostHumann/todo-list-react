@@ -13,12 +13,10 @@ export const Title = styled.h2`
 export const Header = styled.header`
     margin: 0 ;
     padding: 20px;
-    background-color: white;
-    border: 1px hwb(0 85% 15%);
-    border-bottom: solid 1px hwb(0 85% 15%);
+    background-color: hsl(0, 0%, 100%);
+    border-bottom: solid 1px hsl(0, 0%, 85%);
     display: grid;
     grid-template-columns: auto auto ;
-    grid: gap 20px;
     justify-content: space-between;
     align-items: center;
     @media (max-width: 767px){
