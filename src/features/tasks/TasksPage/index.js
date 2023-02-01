@@ -1,5 +1,5 @@
-import TasksList from "../TasksList";
-import Buttons from "../Buttons";
+import TasksList from "../TasksPage/TasksList/index";
+import Buttons from "../TasksPage/Buttons";
 import Header from "../../../common/Header";
 import Section from "../../../common/Section";
 import Container from "../../../common/Container";

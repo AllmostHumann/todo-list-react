@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
-import { addTask } from "../tasksSlice";
+import { addTask } from "../../tasksSlice";
 import { FormElement, FormInput, FormButton } from "./styled";
 
 const Form = () => {

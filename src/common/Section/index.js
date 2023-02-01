@@ -1,8 +1,8 @@
 import { Title, Container, List, Wrapper } from "./styled";
-import Button from "../../features/tasks/ExampleTasksButton";
-import Form from "../../features/tasks/Form";
+import Form from "../../features/tasks/TasksPage/Form";
+import Button from "../../features/tasks/TasksPage/ExampleTasksButton";
 
-const Section = ({ listTitle, listContent, title, bodyContent, buttons }) => {
+const Section = ({ listTitle, listContent, title, buttons }) => {
 
   return (
     <>
