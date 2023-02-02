@@ -5,6 +5,7 @@ import Section from "../../../common/Section";
 import Container from "../../../common/Container";
 import Form from "./Form";
 import ExampleTasksButton from "./ExampleTasksButton";
+import Search from "./Search";
 
 function TasksPage() {
 
@@ -17,7 +18,10 @@ function TasksPage() {
         optionalContent={<ExampleTasksButton />}
         body={<Form />}
       />
-      <Section body={<Form />}/>
+      <Section
+        title="Wyszukiwarka"
+        body={<Search />}
+      />
       <Section
         title="Lista Zadań"
         body={<TasksList />}

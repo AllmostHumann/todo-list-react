@@ -13,14 +13,6 @@ export const FormElement = styled.form`
 }
 `;
 
-export const FormInput = styled.input`
-    border: 1px solid hsl(0, 1%, 69%);
-    padding: 5px;
-    @media (max-width: 767px) {
-        width: 100%;
-}
-`;
-
 export const FormButton = styled.button`
     color: hsl(0, 0%, 100%);
     background-color: hsl(180, 100%, 25%);
