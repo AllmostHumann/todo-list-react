@@ -6,8 +6,8 @@ import Container from "../../../common/Container";
 import Form from "./Form";
 import ExampleTasksButton from "./ExampleTasksButton";
 
-
 function TasksPage() {
+
   return (
     <Container>
       <Header
