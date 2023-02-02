@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
 margin: 0 auto;
+background-color: hsl(0, 0%, 100%);
+border:1px;
+line-height: 1.5;
 `;
 
 export const Title = styled.h2`
     margin: 0;
     font-size: 25px;
-
 `;
 
 export const Header = styled.header`
