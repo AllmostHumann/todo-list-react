@@ -3,7 +3,7 @@ import Header from "../../common/Header";
 import Section from "../../common/Section";
 import { AuthorText } from "./styled";
 
-export default () => (
+const AuthorPage = () => (
   <Container>
     <Header title=" Autor" />
     <Section
@@ -27,3 +27,4 @@ export default () => (
   </Container >
 );
 
+export default AuthorPage;

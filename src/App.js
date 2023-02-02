@@ -3,7 +3,7 @@ import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
 
-export default () => (
+export const App = () => (
   <HashRouter>
     <nav>
       <ul>
@@ -36,3 +36,4 @@ export default () => (
   </HashRouter>
 );
 
+export default App;
