@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const List = styled.ul`
     padding: 20px;
@@ -32,14 +33,14 @@ export const Button = styled.button`
     border: none;
     cursor: pointer;
     padding: 0;
-    transition: 1s;
+    transition: 0;
 
     ${({ type }) => type === "done" && css`
     background-color: hsl(120, 100%, 25%);
 
     &:hover {
     background-color: hsl(101, 99%, 36%);
-    border: solid hsl(0, 0%, 0%);
+    border: 2px solid hsl(0, 0%, 0%);
       }
     `}
 
@@ -48,7 +49,15 @@ export const Button = styled.button`
 
     &:hover {
     background-color: hsl(0, 100%, 64%);
-    border: solid hsl(0, 0%, 0%);
+    border: 2px solid hsl(0, 0%, 0%);
     }
     `}  
+`;
+
+export const StyledLink = styled(NavLink)`
+text-decoration: none;
+color: black;
+&:hover{
+    border-bottom:solid 1px;
+}
 `;
