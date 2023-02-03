@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     flex-wrap: wrap;
 @media (max-width: 767px) {
         flex-basis: auto;
-        margin: 10px;
+        margin: 5px;
         justify-content: center;
 };
 `;
@@ -17,7 +17,7 @@ export const Button = styled.button`
     margin: 0 10px 0 10px;
     transition: color 0.5s;
 @media (max-width: 767px) {
-        margin: 5px 20px 0 0;
+        margin: 5px;
 };
 
 &:hover {

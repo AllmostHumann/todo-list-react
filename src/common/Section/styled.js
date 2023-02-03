@@ -10,7 +10,11 @@ line-height: 1.5;
 export const Title = styled.h2`
     margin: 0;
     font-size: 25px;
-`;
+    @media (max-width: 767px){
+        font-size: 20px;
+        margin: 3px;
+    }
+    `;
 
 export const Header = styled.header`
     margin: 0 ;
