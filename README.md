@@ -29,6 +29,7 @@ Simple to do list in React.js, with mobile devices responsiveness.
 - React-redux
 - React-router
 - Redux-Saga
+- Axios
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
