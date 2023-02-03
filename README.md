@@ -24,10 +24,11 @@ Simple to do list in React.js, with mobile devices responsiveness.
 - ES6
 - Grid
 - Flex
-- React.js
 - Styled-components
+- React.js
 - React-redux
 - React-router
+- Redux-Saga
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
