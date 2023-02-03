@@ -7,3 +7,11 @@ export const AuthorText = styled.div`
     border:1px;
     line-height: 1.5;
 `;
+
+export const Link = styled.a`
+    text-decoration: none;
+    color: black;
+    &:hover{
+    border-bottom:solid 1px;
+}
+`;

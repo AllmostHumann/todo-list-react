@@ -55,9 +55,10 @@ export const Button = styled.button`
 `;
 
 export const StyledLink = styled(NavLink)`
-text-decoration: none;
-color: black;
-&:hover{
+    text-decoration: none;
+    color: black;
+    
+    &:hover{
     border-bottom:solid 1px;
 }
 `;

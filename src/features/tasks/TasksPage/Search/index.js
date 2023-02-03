@@ -3,8 +3,6 @@ import Input from "../../Input"
 import { Wrapper } from "./styled";
 import searchQueryParamName from "./searchQueryParamName";
 
-
-
 const Search = () => {
     const location = useLocation();
     const history = useHistory();

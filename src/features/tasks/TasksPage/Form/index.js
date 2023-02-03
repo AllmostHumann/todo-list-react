@@ -5,13 +5,12 @@ import { addTask } from "../../tasksSlice";
 import { FormElement, FormButton } from "./styled";
 import Input from "../../Input";
 
-
 const Form = () => {
     const [newTaskContent, setNewTaskContent] = useState("");
     const inputRef = useRef(null);
 
     const dispatch = useDispatch();
-    
+
     const focusInput = () => {
         inputRef.current.focus();
     };
@@ -26,7 +25,7 @@ const Form = () => {
 
         dispatch(addTask({
             content: trimmedNewTaskContent,
-            done: false, 
+            done: false,
             id: nanoid(),
         }));
 
