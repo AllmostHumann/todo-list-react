@@ -6,8 +6,8 @@
 ## Demo https://allmosthumann.github.io/todo-list-react/
 
 ## Introduction
-
-This is my fourth project made with <b>#YouCode course.</b> This time the third project "To do list" is transferred in to React.js. 
+ 
+This is my fourth project made with <b>#YouCode course.</b> This time the third project "To do list" is transferred in to React.js. This aplication has the option of searching for specific tasks by name, detalis for each task, marking as done, hiding done task, hiding all done tasks and remove task I'm strongly reccomend to test the app. You can click the "Pobierz przykładowe zadania" button to download three test tasks. With them you can test whole functionality of the To Do List app.  
 
 Please follow me and see how I become Frontend dev! 
 
@@ -26,8 +26,8 @@ Simple to do list in React.js, with mobile devices responsiveness.
 - Flex
 - React.js
 - Styled-components
-- Redux
-
+- React-redux
+- React-router
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
