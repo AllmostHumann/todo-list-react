@@ -14,7 +14,7 @@ const TasksList = () => {
 
   return (
     <List>
-      {tasks.map(tasks => (
+      {tasks.map((tasks) => (
         <Item
           key={tasks.id}
           hidden={tasks.done && hideDone}
