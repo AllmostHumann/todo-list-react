@@ -22,7 +22,8 @@ export const Button = styled.button`
 };
 
 &:hover {
-    border-bottom: solid 1px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 &:disabled {
     color: hsl(0, 0%, 80%);
