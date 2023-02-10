@@ -1,6 +1,4 @@
 import { useEffect, useRef } from "react";
-import { useSelector } from "react-redux";
-import { selectTasks } from "../tasksSlice";
 import TasksList from "../TasksPage/TasksList/index";
 import Buttons from "../TasksPage/Buttons";
 import Header from "../../../common/Header";
@@ -12,15 +10,10 @@ import Search from "./Search";
 
 function TasksPage() {
   const inputRef = useRef(null);
-  const tasks = useSelector(selectTasks);
 
   useEffect(() => {
     inputRef.current.focus();
   }, []);
-
-  useEffect(() => {
-    inputRef.current.focus();
-  }, [tasks]);
 
   return (
     <Container>
